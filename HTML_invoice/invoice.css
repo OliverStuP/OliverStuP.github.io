@@ -1,0 +1,87 @@
+body {
+  background-color: #5b84ab;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;    
+  display: grid;
+  grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+  max-width: 90rem;
+    letter-spacing: 0.01px;  
+text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: "Gabriola Regular";
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+
+main {
+width: 60rem;
+margin: auto;
+background: #ffffff;
+color: #000000;
+    display: grid;
+  grid-gap: 1rem;
+    grid-template-rows: max-content max-content;
+  grid-template-columns: 1fr 1fr;
+    border-radius:10px;
+}
+
+
+h2 {
+    font-family: "Gabriola Regular";
+    grid-column: 1/-1;
+    font-size: 2rem;
+    color: #5b84ab;
+}
+
+
+
+h3, p {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+
+section {
+    padding: 1rem;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+table {
+ grid-column: 1/-1;
+    padding: 1rem;
+    color: #5b84ab;
+}
+
+.odd_row {
+    background: #5b84ab;
+    color: #ffffff;
+}
+
+
+#total h3 {
+    font-size: 1rem;
+}
+
+#terms_conditions h3 {
+    font-size: 1rem;
+}
+
+#payment h3 {
+        font-size: 1rem;
+}
+
+a {
+    color: #ffffff;
+}
