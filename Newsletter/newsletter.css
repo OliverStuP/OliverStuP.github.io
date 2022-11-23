@@ -68,8 +68,6 @@ figcaption {
 footer {
   grid-row: -1;
   grid-column: 1 / -1;
-  background-color: #444;
-  color: #fff;
 }
 
 @media screen and (max-width: 70rem) {
