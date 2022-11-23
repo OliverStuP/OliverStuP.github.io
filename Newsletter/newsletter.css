@@ -1,0 +1,104 @@
+body {
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, Verdana, sans-serif;    
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: max-content max-content max-content;
+  grid-template-columns: 1fr;
+  max-width: 90rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+    letter-spacing: 0.015rem;  
+}
+
+main {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main header {
+	font-family: Verdana, Geneva, sans-serif;
+    color: #000000;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+main section {
+  border: 3px solid #000000;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+    background-color: #002b40;
+    color: #ffffff;
+    padding: 0.75rem;
+    display: block;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#first_story {
+    grid-column: 1 / -1;
+}
+
+.story {
+    background-color: #99add1;
+}
+
+p {
+    padding: 0rem 0.75rem;
+}
+
+
+figure {
+  margin: 10%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+footer {
+  grid-row: -1;
+  grid-column: 1 / -1;
+  background-color: #444;
+  color: #fff;
+}
+
+@media screen and (max-width: 70rem) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+    #fourthstory {
+        grid-column: 1 / -1;
+}
+}
+
+@media screen and (max-width: 50rem) {
+  body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  nav li {
+    display: block;
+  }
+}
