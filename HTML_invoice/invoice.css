@@ -4,7 +4,7 @@ body {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content;
+  grid-template-rows: max-content max-content;
   max-width: 90rem;
   letter-spacing: 0.01px;  
   text-align: center;
@@ -30,6 +30,11 @@ color: #000000;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
     border-radius:10px;
+}
+
+header {
+    grid-column: 1 / -1;
+    text-align: center;
 }
 
 
