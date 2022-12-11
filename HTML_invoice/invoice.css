@@ -3,7 +3,6 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;    
   display: grid;
   grid-gap: 1rem;
-  grid-template-rows: max-content max-content max-content;
   grid-template-columns: 1fr;
   max-width: 90rem;
   letter-spacing: 0.01px;  
@@ -36,7 +35,7 @@ background: #ffffff;
 color: #000000;
 display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
     border-radius:10px;
 }
 
@@ -47,6 +46,7 @@ h2 {
 	font-family: "Gabriola Regular";
     font-size: 2rem;
     color: #5b84ab;
+	grid-column: 1 / -1;
 }
 
 
@@ -70,7 +70,7 @@ section {
 }
 
 table {
- grid-column: 1/-1;
+ grid-column: 1 / -1;
     padding: 1rem;
     color: #5b84ab;
 }
@@ -99,12 +99,9 @@ a {
 
 @media screen and (max-width: 70rem) {
   main {
-    grid-template-columns: 1fr;
+    width: auto;
   }
 }
 
 @media screen and (max-width: 50rem) {
-  body {
-    grid-template-columns: 1fr;
-  }
 }
