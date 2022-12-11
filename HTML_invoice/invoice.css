@@ -85,3 +85,15 @@ table {
 a {
     color: #ffffff;
 }
+
+@media screen and (max-width: 70rem) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  body {
+    grid-template-columns: 1fr;
+  }
+}
