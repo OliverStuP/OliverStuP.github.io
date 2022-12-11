@@ -74,6 +74,9 @@ footer {
   main {
     grid-template-columns: 1fr 1fr 1fr;
   }
+    #fourthstory {
+        grid-column: 1 / -1;
+}
 }
 
 @media screen and (max-width: 50rem) {
