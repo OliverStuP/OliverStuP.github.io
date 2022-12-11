@@ -3,9 +3,8 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;    
   display: grid;
   grid-gap: 1rem;
+  grid-template-rows: max-content max-content max-content;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content;
-  grid-column: 1/-1;
   max-width: 90rem;
   letter-spacing: 0.01px;  
   text-align: center;
@@ -35,12 +34,10 @@ width: 60rem;
 margin: auto;
 background: #ffffff;
 color: #000000;
-    display: grid;
+display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: max-content max-content;
+  grid-template-columns: 1fr 1fr 1fr;
     border-radius:10px;
-	grid-column: 1/-1;
 }
 
 
@@ -48,7 +45,6 @@ color: #000000;
 h2 {
     text-align: center;
 	font-family: "Gabriola Regular";
-    grid-column: 1/-1;
     font-size: 2rem;
     color: #5b84ab;
 }
@@ -102,17 +98,13 @@ a {
 }
 
 @media screen and (max-width: 70rem) {
-  body {
-	  
-  }
   main {
-	grid-template-columns: 1fr;
-	grid-column: 1 / -1;
+    grid-template-columns: 1fr;
   }
 }
 
 @media screen and (max-width: 50rem) {
   body {
-	grid-column: 1 / -1;
+    grid-template-columns: 1fr;
   }
 }
