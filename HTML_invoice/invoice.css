@@ -25,6 +25,8 @@ h1 {
     font-family: "Gabriola Regular";
     color: #ffffff;
     font-size: 3rem;
+    grid-column: 1 / -1;
+    text-align: center;
 }
 
 
@@ -100,6 +102,9 @@ a {
 }
 
 @media screen and (max-width: 70rem) {
+  body {
+	  
+  }
   main {
 	grid-template-columns: 1fr;
 	grid-column: 1 / -1;
