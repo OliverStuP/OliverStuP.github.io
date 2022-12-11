@@ -4,7 +4,7 @@ body {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: max-content;
   grid-column: 1/-1;
   max-width: 90rem;
   letter-spacing: 0.01px;  
@@ -36,6 +36,7 @@ color: #000000;
     display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content;
     border-radius:10px;
 	grid-column: 1/-1;
 }
