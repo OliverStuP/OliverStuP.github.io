@@ -87,7 +87,7 @@ a {
 }
 
 @media screen and (max-width: 70rem) {
-  main {
+  body {
     grid-template-columns: 1fr;
   }
 }
