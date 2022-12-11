@@ -28,7 +28,6 @@ background: #ffffff;
 color: #000000;
     display: grid;
   grid-gap: 1rem;
-    grid-template-rows: max-content max-content;
   grid-template-columns: 1fr 1fr;
     border-radius:10px;
 }
