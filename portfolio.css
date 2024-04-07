@@ -35,16 +35,13 @@ main header {
 main section {
   border: 5px solid #000000;
   padding: 1rem;
+  grid-column: 1 / -1;
 }
 
 h2 {
   margin-top: 0;
   text-align: center;
   font-family: Verdana, Geneva, sans-serif;
-}
-
-#work_i_have_done {
-  grid-column: 1 / -1;
 }
 
 nav {
@@ -75,14 +72,6 @@ a {
 
 nav a {
   color: #000;
-}
-
-#contest_entries {
-    grid-column: 1 / -1;
-}
-
-#call_to_action {
-  grid-column: 1 / -1;
 }
 
 @media screen and (max-width: 70rem) {
