@@ -12,7 +12,7 @@ body {
   font-family: Helvetica, Verdana, Geneva, sans-serif;
   display: grid;
   grid-gap: 1rem;
-  grid-template-rows: max-content max-content max-content;
+  grid-template-rows: max-content;
   grid-template-columns: 1fr;
   max-width: 90rem;
   margin-left: 1rem;
@@ -25,7 +25,7 @@ body {
 main {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 main header {
@@ -36,16 +36,12 @@ main header {
 
 
 main section {
-  padding: 10rem;
+  padding: 7rem;
   grid-column: 1 / -1;
   text-align: center; 
   margin: 0.5rem; 
   align-items: center; 
   justify-content: start; 
-}
-
-#home {
-	
 }
 
 h2 {
@@ -101,6 +97,12 @@ a {
 nav a {
   color: #000;
 }
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 
 @media screen and (max-width: 70rem) {
   main {
