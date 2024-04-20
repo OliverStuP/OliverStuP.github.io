@@ -34,7 +34,7 @@ main header {
 
 
 main section {
-  padding: 7rem;
+  padding: 6rem;
   grid-column: 1 / -1;
   text-align: center; 
   margin: 0.5rem; 
