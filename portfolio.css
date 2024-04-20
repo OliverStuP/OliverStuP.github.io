@@ -1,22 +1,20 @@
 h1 {
 	font-family: Helvetica, Verdana, Geneva, sans-serif;
     text-align:center;
-	padding: 0 5rem; 
+	padding: 0 5rem;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box; 
-  background-color: #f2f7ff;
+  background-color: #ffffff;
   font-family: Helvetica, Verdana, Geneva, sans-serif;
   display: grid;
   grid-gap: 1rem;
   grid-template-rows: max-content;
   grid-template-columns: 1fr;
   max-width: 90rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
     letter-spacing: 0.01rem;
     
 }
@@ -42,6 +40,8 @@ main section {
   margin: 0.5rem; 
   align-items: center; 
   justify-content: start; 
+  display: flex;
+	 flex-direction: column; 
 }
 
 h2 {
@@ -63,14 +63,52 @@ h3 {
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
-	background-color: transparent; 
-	background-image: linear-gradient(10deg, #74D7BB, #53C8B6, #35A99C); 
+	background-color: #7ebca1;
 }
 
-.items{
+.item{
   grid-row: 1;
   grid-column: 1 / -1;
   text-align: center;
+   padding: 0.5rem 1rem;
+   border: 2px solid #000;
+	width: 100%;    
+	background-color: #7ebca1;
+}
+
+.pages {
+    list-style: none; 
+}
+
+.hamburger {
+	display: none; 
+}
+
+.cross-icon {
+	display: none; 
+}
+
+#home {
+    height: 100vh; 
+	 justify-content: start; 
+}
+
+#about {
+	justify-content: space-between; 
+}
+
+#services {
+	justify-content: center; 
+	margin: 4.8rem 0; 
+}
+
+#portfolio {
+	margin: 4.8rem 0; 
+}
+
+#contact {
+	margin: 4.8rem 0; 
+	justify-content: space-between; 
 }
 
 nav ul {
@@ -81,7 +119,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  background-color: #5fa8ba;
+  background-color: #468499;
   border:2px solid #000000;
   padding: 0.5rem;
     border-radius:10px;
@@ -98,25 +136,44 @@ nav a {
   color: #000;
 }
 
+footer {
+	color: #fff; 
+	padding: 2rem; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+    justify-content: center; 
+}
+
 .responsive {
   max-width: 100%;
-  height: auto;
 }
 
 
 @media screen and (max-width: 70rem) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
+	h1 {
+	padding: 0 3rem;
+	
+	}
+	.hamburger {
+		display: block; 
+		padding: 0 3rem;
+	}
+	
+	.pages {
+		position: absolute;
+		right: 0;		
+		padding: 0 3rem; 
+		top: 50px; 
+		background-color: #7ebca1;
+		display: none; 
+	}
 }
 
 @media screen and (max-width: 50rem) {
 }
 
 @media screen and (max-width: 30rem) {
-  main {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media screen and (max-width: 25rem) {
