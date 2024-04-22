@@ -135,6 +135,15 @@ nav a {
   color: #000;
 }
 
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:#000;
+  height: 1px;
+}
+
 footer {
 	color: #fff; 
 	padding: 2rem; 
@@ -145,7 +154,7 @@ footer {
 }
 
 .responsive {
-  max-width: 100%;
+  max-width: 66%;
 }
 
 
