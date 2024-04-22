@@ -165,6 +165,9 @@ footer {
 	padding: 0 3rem;
 	
 	}
+	main section {
+	scroll-margin-top: 150px;
+	}
 	.hamburger {
 		display: block; 
 		padding: 0 3rem;
@@ -180,7 +183,7 @@ footer {
 	}
 	
 	nav li {
-  padding: 0.5rem;
+  padding: 0.3rem;
     border-radius:10px;
     margin: 6px 0;
     box-sizing: border-box;
